@@ -3,16 +3,137 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Prelim Exam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Prelim Exam</h1>
-    <nav>
-        <ul>
-            <li><a href="./Prelim Exam/Build_a_Profile_Page.html">Build a Profile Page</li>
-        </ul>
+<body id="top">
+
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
+
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <!-- Replace the image with your own profile picture -->
+                    <img class="photo" src="https://i.pinimg.com/736x/ba/a2/f1/baa2f1d8e799b3156d6988eab27b4d9d.jpg" alt="Profile picture of Irish Kristel Sulad">
+                </div>
+            </div>
+
+            <div class="header-text">
+                <h1 class="name">Irish Kristel F. Sulad</h1>
+                <ul class="header-links">
+                    <li>Tel No.: <a href="tel:+639380488690">+63 938 048 8690</a></li>
+                    <li>Email: <a href="mailto:irishkristel1247@gmail.com">irishkristel1247@gmail.com</a></li>
+                    <li><a href="https://github.com/sulad2432603-rishk" target="_blank" rel="noopener noreferrer">My GitHub Profile</a>
+                    </li>
+                </ul>
+                <p class="profile">
+                    Hello! you can call me Rish for short. I enjoy exploring technology and expressing myself through art and music.
+                </p>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="wrapper">
+
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>Traditional Drawing</li>
+                <li>Crafting</li>
+                <li>Playing Musical Instruments</li>
+                <li>Programming</li>
+                <li>MySQL Database Management</li>
+            </ul>
+        </section>
+
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
+            <h2>Education</h2>
+
+            <div class="entry">
+                <span class="entry-year">2024 - Present</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="entry-school">Central Escolar University, Malolos</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2022 - 2024</span>
+                <h3>Senior High School - ABM Strand</h3>
+                <p class="entry-school">St. Mark College of Baliuag, Bulacan, Inc.</p>
+            </div>
+        </section>
+
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>
+                    <strong>Github Project Collaborator</strong> - 2026
+                </li>
+                <li>
+                    <strong>Dean's Lister</strong> - 1st and 2nd Semester, A.Y. 2024-2025
+                </li>
+                <li>
+                    <strong>Dean's Lister</strong> - 1st and 2nd Semester, A.Y. 2025-2026
+                </li>
+                <li>
+                    <strong>With High Honors</strong> - Senior High School, 2024
+                </li>
+            </ul>
+        </section>
+
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="irish Kristel Sulad" required>
+                    </div>
+
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="irishkristel1247@gmail.com" required>
+                    </div>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Irish Kristel F. Sulad &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
 </body>
 
 </html>
